@@ -1,3 +1,61 @@
 @import url("https://fonts.googleapis.com/css2?family=Baumans&family=Megrim&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  font-family: "baumans", cursive;
+  color: #F3F0F0;
+  background: url("/media/background.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+li {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+}
+li a:visited {
+  color: #F3F0F0;
+}
+
+.title {
+  padding: 5px 0 0 10px;
+}
+.title h1 {
+  font-family: "Megrim", cursive;
+  font-size: 45px;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin: 0;
+  padding-left: 10px;
+  color: #FA9E1E;
+  text-shadow: 2px 2px 0px #84C1FF, 4px 4px 0 #FF1808, 4px 4px 4px #FA9E1E;
+}
+
+.nav {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+}
+.nav li {
+  display: inline;
+  padding: 0 15px;
+  border-left: 3px solid #F3F0F0;
+}
+.nav li:hover {
+  border: 2px solid #F3F0F0;
+  transition: 0.5 ease-in-out;
+}
+.nav li:active {
+  border: 5px solid #F3F0F0;
+}
+@media (max-width: 799px) {
+  .nav li {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
