@@ -81,4 +81,60 @@ li a:visited {
   left: 13%;
 }
 
+.carousel {
+  width: 20%;
+  border-radius: 0 0 15px 15px;
+  margin: -20px auto 20px auto;
+  overflow: hidden;
+  box-shadow: 8px 8px 4px -3px rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 840px) {
+  .carousel {
+    display: none;
+  }
+}
+.carousel-figure {
+  position: relative;
+  width: 300%;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  animation: 25s sliders infinite;
+}
+.carousel-figure-pic {
+  width: 33.33%;
+  height: auto;
+  float: left;
+}
+
+@keyframes sliders {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    right: 200%;
+  }
+  75% {
+    right: 100%;
+  }
+  95% {
+    right: 100%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
