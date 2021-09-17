@@ -136,5 +136,31 @@ li a:visited {
     right: 0%;
   }
 }
+.offers {
+  display: flex;
+  padding-top: 50px;
+  align-items: center;
+}
+
+.perspective {
+  width: 100%;
+  perspective: 800px;
+  display: flex;
+  justify-content: space-between;
+}
+.perspective-3d {
+  width: 140px;
+  height: 200px;
+  margin: auto;
+  box-shadow: 0 70px 63px -60px #494848;
+  transform-style: preserve-3d;
+  transition: transform 0.05s linear;
+}
+.perspective-3d-card {
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+}
 
 /*# sourceMappingURL=style.css.map */
