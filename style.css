@@ -191,4 +191,34 @@ li a:visited {
   transform: translateZ(35px);
 }
 
+.button {
+  padding-top: 60px;
+  position: relative;
+  margin: 0 auto;
+  width: 320px;
+}
+.button:hover .button-rect {
+  stroke-dasharray: 760;
+  stroke-dashoffset: 0;
+  stroke-width: 2px;
+}
+.button-rect {
+  fill: transparent;
+  stroke: #FA9E1E;
+  border-bottom: 5px solid #FA9E1E;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+}
+.button-text {
+  position: relative;
+  text-align: center;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 8px;
+  color: #F3F0F0;
+  top: -48px;
+}
+
 /*# sourceMappingURL=style.css.map */

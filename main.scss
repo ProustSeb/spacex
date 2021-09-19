@@ -36,7 +36,7 @@ li{
         }
     }
 }
-// ***** HEADER *****
+// ===== HEADER ======
 .title{
     padding: 5px 0 0 10px;
     z-index: 10;
@@ -172,5 +172,43 @@ li{
         font-size: 0.8em;
         font-weight: 600;
         transform: translateZ(35px);
+    }
+}
+// ========================= BUTTON =======================
+@mixin dash ($array, $offset, $width) {
+    stroke-dasharray: $array;
+    stroke-dashoffset: $offset;
+    stroke-width: $width;
+}
+
+.button{
+    padding-top: 60px;
+    position: relative;
+    margin: 0 auto;
+    width: 320px;
+
+    &:hover
+        &-rect{
+            @include dash(760, 0, 2px)
+        }
+    
+
+    &-rect{
+        fill: transparent;
+        stroke: $color4;
+        border-bottom: 5px solid $color4;
+
+        transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+        @include dash(140 540, -474, 8px)
+    }
+
+    &-text{
+        position: relative;
+        text-align: center;
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: 8px;
+        color: $color1;
+        top: -48px;
     }
 }
